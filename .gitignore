@@ -1,0 +1,29 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# VS Code files
+.vscode/
+
+# Database files 
+*.sqlite3
+
+# System files
+.DS_Store
+
+# Logs
+*.log
+
+# MySQL data dir 
+mysql_data/
+
+# pipenv and poetry files 
+Pipfile.lock
+
+# Other
+*.egg-info/
+dist/
+build/

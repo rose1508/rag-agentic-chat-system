@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Chat</title>
+    <script>
+        async function sendQuery() {
+            const query = document.getElementById("query").value;
+            const res = await fetch(`/chat?query=${encodeURIComponent(query)}`);
+            const data = await res.json();
+            document.getElementById("response").innerText = data.response;
+        }
+    </script>
+</head>
+<body>
+    <h1>Federal Register Chat</h1>
+    <input id="query" placeholder="Ask about Biden, Trump, etc." />
+    <button onclick="sendQuery()">Ask</button>
+    <pre id="response"></pre>
+</body>
+</html>
